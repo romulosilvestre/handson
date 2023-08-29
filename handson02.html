@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handson 02</title>
+      <!--O usuário vai digitar um nome em uma 
+        caixa de texto. Em outra caixa de texto
+         ele vai digitar o sobrenome.Posteriormente
+         você deve mostrar o nome junto com o 
+         sobrenome
+       em um alert( )-->
+       <style>
+        
+        #caixa1{
+           background-color: blue;
+           float:left;
+           margin-left:26px;
+           margin-top:100px;
+           width: 50px;
+           height: 50px;
+           border: 2px solid black;
+        }
+        #caixa2{
+           background-color: aqua;
+           width: 50px;
+           height: 50px;
+           border: 2px solid black;
+        }
+     </style>
+</head>
+<body> 
+     
+     <!--O usuário deverá digitar o nome e o sobrenome
+    deve interpolar as duas variáveis-->
+    nome <input type="text" id="nome">
+    sobrenome <input type="text"  id="sobrenome">
+    <button onclick="exibirNomeCompleto()">mostrar</button>
+    <script src="js/handson02.js"></script>
+
+      
+
+
+</body>
+</html>
