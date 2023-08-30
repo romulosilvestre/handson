@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handson 04</title>
+</head>
+<body>
+
+     numero <input type="text" id="numero">
+     <button onclick="validaNumero()">verificar</button>
+
+     <script>
+        /*ousado: positivo, negativo e nulo*/
+           function validaNumero(){
+               var numero = document.getElementById("numero").value;
+               if(numero>0){
+                 alert("o número é positivo!")
+               }else if(numero <0){
+                 alert("o número é negativo!")
+               }else{
+                 alert("o número é nulo")
+               }
+           }
+     </script>
+    
+</body>
+</html>

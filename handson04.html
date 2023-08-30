@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handson 04</title>
+</head>
+<body>
+
+     idade <input type="text" id="idade">
+     <button onclick="validaIdade()">verificar</button>
+
+     <script>
+        /*ousado: positivo, negativo e nulo*/
+           function validaIdade(){
+               var idade = document.getElementById("idade").value;
+               if(idade >= 18){
+                 alert("de maior!")
+               }else{
+                 alert("de menor!")
+               }
+           }
+     </script>
+    
+</body>
+</html>
