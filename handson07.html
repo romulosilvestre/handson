@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handson 07</title>
+</head>
+<body>
+    nota 1 <input type="number" id="nota1">
+    nota 2 <input type="number" id="nota2">
+    <button onclick="calcularMedia()"> Verificar</button>
+    <script>
+        function calcularMedia(){
+            var nota1 = document.getElementById("nota1").value
+            var nota2 = document.getElementById("nota2").value
+            var media = (nota1+nota2)/2
+            alert(media)
+            if(media>=7){
+                alert("aprovado")
+            }else{
+                alert("reprovado")
+            }            
+        }
+    </script>    
+</body>
+</html>
