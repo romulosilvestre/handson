@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handson 06</title>
+</head>
+
+<body>
+    <!--PASSO 1-->
+    digite um número <input type="number" id="numero">
+    <!--PASSO 2-->
+    <button onclick="verificarParidade()">verificar</button>   
+    <script>
+        function verificarParidade() {
+            //PASSO 3 - pegar o número na caixinha
+            var numero = document.getElementById("numero").value
+
+            //PASSO 4 - lógica matemática (se numero % 2 == 0)
+            if (numero % 2 == 0) {
+                alert("par")
+            } else {
+                alert("ímpar")
+            }
+        }
+    </script>
+</body>
+</html>
+
