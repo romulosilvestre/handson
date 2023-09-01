@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handson 08 - Marcia</title>
+</head>
+
+<body>
+
+    <!--Criar um algoritmo que some dois números
+    
+       Pesquisar sobre o uso de declaração de variáveis:
+       var
+       let
+       const
+       var x ou let x ou const x
+    -->
+    <p id="r"></p>
+    x <input type="number" id="x">
+    y <input type="number" id="y">
+
+    <button onclick="somar()">somar</button>
+    <button onclick="subtrair()">subtrair</button>
+    <button onclick="multiplicar()">multiplicar</button>
+    <button onclick="dividir()">dividir</button>
+    <button onclick="escrever()">escrever</button>
+
+    <script>
+        function escrever(){
+            document.getElementById("r").innerHTML = "Tainah!";
+        } 
+        function somar(){
+            var x = Number.parseInt(document.getElementById("x").value)
+            var y = Number.parseInt(document.getElementById("y").value)
+            var soma = x+y
+            document.getElementById("r").innerHTML = soma;
+        } 
+        function subtrair(){
+            var x = Number.parseInt(document.getElementById("x").value)
+            var y = Number.parseInt(document.getElementById("y").value)
+            var soma = x-y
+            document.getElementById("r").innerHTML = soma;
+        } 
+        function multiplicar(){
+            var x = Number.parseInt(document.getElementById("x").value)
+            var y = Number.parseInt(document.getElementById("y").value)
+            var soma = x*y
+            document.getElementById("r").innerHTML = soma;
+        }
+        function dividir(){
+            var x = Number.parseInt(document.getElementById("x").value)
+            var y = Number.parseInt(document.getElementById("y").value)
+            var soma = x/y
+            document.getElementById("r").innerHTML = soma;
+        }      
+    </script>
+
+</body>
+
+</html>
